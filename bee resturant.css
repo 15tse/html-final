@@ -1,0 +1,165 @@
+body{
+    background-color: #e5e5e5;
+}
+
+
+
+.container{
+    display: grid;
+    padding: 10px;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 
+    "ha ha ha ha ha ha"
+    "rs mn mn mn mn ls"
+    "ft ft ft ft ft ft";
+}
+
+/*header*/
+.hd{
+    display: inline;
+    background-color: #3d5a9c;
+    grid-area: ha;
+    width: auto;
+    height: auto;
+    margin-top: 2px;
+    padding-top: 5px;
+    margin-bottom: 20px;
+   
+    
+   
+    
+    
+}
+.hd h1{
+
+    color: #fff; 
+    display: inline;
+
+    
+ 
+}
+.hd img{
+    width: 50px;
+    height: auto;
+
+   
+}
+.hd nav{
+    align-items: center;
+    margin-right:20px;
+    align-items: center;
+    align-content: center;
+    margin-top: 5px;
+
+}
+.hd nav ul{
+    list-style: none;
+    font-size: bold;
+    text-align: center;
+    
+
+
+}
+.hd nav ul li{
+color: rgb(255, 0, 47);
+display: inline; 
+padding-top: 0%;
+padding: 10px;
+
+}
+
+.hd nav ul li a{
+    text-decoration: none;
+    font-size: 15px;
+    margin-top: 0px;
+    background-color: #fff;
+    text-align: center;
+    
+    
+    
+    
+    
+
+}
+
+/*start of main content*/
+.mn-1{
+    background-color:white;
+    grid-area: mn;
+    padding: 15px;
+    
+    
+
+}
+
+
+/*side box*/
+.rs{
+    background-color: #ccd0d6;
+    grid-area: rs;
+    margin-right: 50px ;
+    color:#3d5a9c ;
+    text-align: center;
+    align-content: center;
+    padding-top: 50px;
+    height: 300px;
+}
+.rs h1 button{
+
+    align-items: center;
+    color:#3d5a9c ;
+}
+.ls{
+    background-color: #ccd0d6;
+    grid-area: ls;
+    padding:10px;
+    margin-left: 30px ;
+    text-align:  center;
+    color:#3d5a9c ;
+}
+.ls form{
+    text-align: center;
+    padding-top: 50px;
+
+}
+
+.ls label{
+    border:1px solid black;
+    border-radius: 5%;
+    color:#3d5a9c ;
+    grid-area: 0.2rem;
+    
+    
+}
+.me1{
+    background-color: white;
+    color: #3d5a9c;
+    border:0.1px solid black;
+    border-radius: 10%;
+}
+#name{
+    border:1px solid black;
+    border-radius: 5%;
+    color: #3d5a9c;
+    padding-left: 50px;
+   
+}
+.me{
+    color: #3d5a9c;
+}
+
+
+/*footer*/
+.ft{
+    background-color: #f6fcfa;
+    grid-area: ft;
+    font-size:6px;
+    text-align:center ;
+    height: 50px;
+}
+@media all and (max-width: 780px){
+    body{
+        background-color: #f4ebeb;
+    }
+}
